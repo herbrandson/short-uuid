@@ -11,7 +11,11 @@
     "uuid"
   ],
   "author": "Eric Herbrandson",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:herbrandson/short-uuid.git"
+  },
   "dependencies": {
     "node-uuid": "^1.4.7"
   },
