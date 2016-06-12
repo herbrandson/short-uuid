@@ -16,8 +16,8 @@ function create() {
 
 function fromBuffer(buffer) {
 	return buffer.toString('base64')
-		.replace(/\//g, '-') // make our uuid url friendly by replacing "/" with "-"
-		.replace(/=/g, ''); // remove the trailing "=="
+		.substring(0, 22) // remove the trailing "=="
+		.replace(/\//g, '-'); // make our uuid url friendly by replacing "/" with "-"
 }
 
 function toBuffer(value) {
