@@ -1,7 +1,7 @@
 {
   "name": "small-uuid",
-  "version": "1.0.0",
-  "description": "A short, url friendly, base64 encoded uuid module",
+  "version": "1.0.1",
+  "description": "A small, url friendly, base64 encoded uuid module",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"

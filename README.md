@@ -1,4 +1,4 @@
-# short-uuid
+# small-uuid
 > A short, url friendly, base64 encoded uuid module
 
 This module creates uuid/guid strings that are short then the standard '00000000-0000-0000-0000-000000000000' format.
@@ -9,7 +9,7 @@ Short uuids will be 22 characters long (instead of 36) and a basically a base64 
 Install via `npm`:
 
 ```
-$ npm install short-uuid
+$ npm install small-uuid
 ```
 
 
@@ -17,14 +17,14 @@ $ npm install short-uuid
 
 Create a short uuid
 ``` js
-var uuid = require('short-uuid');
+var uuid = require('small-uuid');
 var id = uuid.create();
 // "id" will equal something like "NaTPOgp1QUuB6Gm5tAdcSw"
 ```
 
 Create from a buffer
 ``` js
-var uuid = require('short-uuid');
+var uuid = require('small-uuid');
 var buffer = new Buffer('NaTPOgp1QUuB6Gm5tAdcSw==', 'base64');
 var id = uuid.fromBuffer(buffer);
 // "id" will equal "NaTPOgp1QUuB6Gm5tAdcSw"
@@ -32,13 +32,13 @@ var id = uuid.fromBuffer(buffer);
 
 Create a buffer from a short uuid
 ``` js
-var uuid = require('short-uuid');
+var uuid = require('small-uuid');
 var buffer = uuid.toBuffer('NaTPOgp1QUuB6Gm5tAdcSw');
 ```
 
 Create from a standard uuid hex string
 ``` js
-var uuid = require('short-uuid');
+var uuid = require('small-uuid');
 var id = uuid.fromHex('35a4cf3a-0a75-414b-81e8-69b9b4075c4b');
 // "id" will equal "NaTPOgp1QUuB6Gm5tAdcSw"
 ```
